@@ -24,8 +24,6 @@ public class FirstActivity extends AppCompatActivity {
 
         al = new ArrayList<String>();
         al.add("Year 1");
-
-        //***Start***
         al.add("Year 2");
         al.add("Year 3");
 
@@ -38,10 +36,9 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getBaseContext(), SecondActivity.class);
-                intent.putExtra("pos", position);
+                intent.putExtra("year", position+1);
                 startActivity(intent);
             }
         });
-        //***End***
     }
 }
