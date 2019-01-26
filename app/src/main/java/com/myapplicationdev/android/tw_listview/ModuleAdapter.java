@@ -54,6 +54,5 @@ public class ModuleAdapter extends ArrayAdapter<Module> {
         }
         // Return the nicely done up View to the ListView
         return rowView;
-
     }
 }
